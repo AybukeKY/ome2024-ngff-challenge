@@ -18,4 +18,6 @@ class ZarrCrate(ROCrate):
             "biosample": "http://purl.obolibrary.org/obo/OBI_0002648",
             "preparation_method": "https://www.wikidata.org/wiki/Property:P1537",
             "specimen": "http://purl.obolibrary.org/obo/HSO_0000308",
+            "intrinsic_variable": "https://founding-gide.eurobioimaging.eu/tmp/intrinsic_variable",
+            "Gene": "https://bioschemas.org/Gene"
         }
