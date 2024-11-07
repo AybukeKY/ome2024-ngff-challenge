@@ -19,5 +19,11 @@ class ZarrCrate(ROCrate):
             "preparation_method": "https://www.wikidata.org/wiki/Property:P1537",
             "specimen": "http://purl.obolibrary.org/obo/HSO_0000308",
             "intrinsic_variable": "https://founding-gide.eurobioimaging.eu/tmp/intrinsic_variable",
-            "Gene": "https://bioschemas.org/Gene"
+            "Gene": "https://schema.org/Gene",
+            "extrinsic_variable": "https://founding-gide.eurobioimaging.eu/tmp/extrinsic_variable",
+            "ChemicalSubstance": "https://schema.org/ChemicalSubstance",
+            "potentialUse": "https://schema.org/potentialUse",
+            "Compound": "https://founding-gide.eurobioimaging.eu/tmp/Compound",
+            "Antibody": "https://founding-gide.eurobioimaging.eu/tmp/Antibody",
+            "Reagent": "https://founding-gide.eurobioimaging.eu/tmp/Reagent"
         }

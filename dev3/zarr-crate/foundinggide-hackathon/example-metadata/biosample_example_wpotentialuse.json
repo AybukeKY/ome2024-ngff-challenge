@@ -18,7 +18,11 @@
         "intrinsic_variable": "https://founding-gide.eurobioimaging.eu/tmp/intrinsic_variable",
         "Gene": "https://schema.org/Gene",
         "extrinsic_variable": "https://founding-gide.eurobioimaging.eu/tmp/extrinsic_variable",
-        "ChemicalSubstance": "https://schema.org/ChemicalSubstance"
+        "ChemicalSubstance": "https://schema.org/ChemicalSubstance",
+        "potentialUse": "https://schema.org/potentialUse",
+        "Compound": "https://founding-gide.eurobioimaging.eu/tmp/Compound",
+        "Antibody": "https://founding-gide.eurobioimaging.eu/tmp/Antibody",
+        "Reagent": "https://founding-gide.eurobioimaging.eu/tmp/Reagent"
       }
     ],
     "@graph": [

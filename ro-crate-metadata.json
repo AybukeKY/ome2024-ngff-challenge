@@ -1,0 +1,123 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "organism_classification": "https://schema.org/taxonomicRange",
+      "BioChemEntity": "https://schema.org/BioChemEntity",
+      "channel": "https://www.openmicroscopy.org/Schemas/Documentation/Generated/OME-2016-06/ome_xsd.html#Channel",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "FBcv": "http://ontobee.org/ontology/FBcv/",
+      "acquisiton_method": {
+        "@reverse": "https://schema.org/result",
+        "@type": "@id"
+      },
+      "biological_entity": "https://schema.org/about",
+      "biosample": "http://purl.obolibrary.org/obo/OBI_0002648",
+      "preparation_method": "https://www.wikidata.org/wiki/Property:P1537",
+      "specimen": "http://purl.obolibrary.org/obo/HSO_0000308",
+      "intrinsic_variable": "https://founding-gide.eurobioimaging.eu/tmp/intrinsic_variable",
+      "Gene": "https://schema.org/Gene",
+      "extrinsic_variable": "https://founding-gide.eurobioimaging.eu/tmp/extrinsic_variable",
+      "ChemicalSubstance": "https://schema.org/ChemicalSubstance",
+      "potentialUse": "https://schema.org/potentialUse",
+      "Compound": "https://founding-gide.eurobioimaging.eu/tmp/Compound",
+      "Antibody": "https://founding-gide.eurobioimaging.eu/tmp/Antibody",
+      "Reagent": "https://founding-gide.eurobioimaging.eu/tmp/Reagent"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Test Light microscopy photo of a fly",
+      "description": "Light microscopy photo of a fruit fly.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "resultOf": {
+        "@id": "#d838c97a-520a-48dc-ba10-a981b478982c"
+      }
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "#1f5bfe41-c7f2-4bfb-804e-d111d610f851",
+      "@type": "Gene",
+      "identifier": "ENSG00000010404",
+      "taxonomicRange": "Ensembl:ENSG00000010404"
+    },
+    {
+      "@id": "#b13cc6f2-2787-4571-aa46-dacfd89d2577",
+      "@type": "intrinsic_variable",
+      "Gene": {
+        "@id": "#1f5bfe41-c7f2-4bfb-804e-d111d610f851"
+      }
+    },
+    {
+      "@id": "#7f6a79ac-5656-4ed7-b204-53ada6e0b114",
+      "@type": [
+        "ChemicalSubstance",
+        "Compound"
+      ],
+      "identifier": "CHEBI:17790",
+      "name": "methanol"
+    },
+    {
+      "@id": "#2ffd39fd-eeee-4b92-8c63-2b403ccfca85",
+      "@type": [
+        "ChemicalSubstance",
+        "Reagent"
+      ],
+      "identifier": "CHEBI:51231",
+      "name": "DAPI"
+    },
+    {
+      "@id": "#69a4ec55-8499-49a7-842e-3605d92cb96d",
+      "@type": "extrinsic_variable",
+      "ChemicalSubstance": [
+        {
+          "@id": "#7f6a79ac-5656-4ed7-b204-53ada6e0b114"
+        },
+        {
+          "@id": "#2ffd39fd-eeee-4b92-8c63-2b403ccfca85"
+        }
+      ]
+    },
+    {
+      "@id": "#416844e8-bffc-4e7f-98f8-559c867ad588",
+      "@type": "biosample",
+      "organism_classification": {
+        "@id": "NCBI:txid7227"
+      },
+      "intrinsic_variable": {
+        "@id": "#b13cc6f2-2787-4571-aa46-dacfd89d2577"
+      },
+      "extrinsic_variable": {
+        "@id": "#69a4ec55-8499-49a7-842e-3605d92cb96d"
+      }
+    },
+    {
+      "@id": "#d77f9957-8273-4bd5-9a45-410ac8e127f7",
+      "@type": "specimen",
+      "biosample": {
+        "@id": "#416844e8-bffc-4e7f-98f8-559c867ad588"
+      }
+    },
+    {
+      "@id": "#d838c97a-520a-48dc-ba10-a981b478982c",
+      "@type": "image_acquisition",
+      "fbbi_id": {
+        "@id": "obo:FBbi_00000243"
+      },
+      "specimen": {
+        "@id": "#d77f9957-8273-4bd5-9a45-410ac8e127f7"
+      }
+    }
+  ]
+}
