@@ -103,7 +103,15 @@
         "@id": "51231",
         "@type": "ChemicalSubstance",
         "identifier": "CHEBI:51231",
-        "name": "DAPI"
+        "name": "DAPI",
+        "potentialUse": {
+            "@id": "http://purl.obolibrary.org/obo/CHEBI_51217"
+      }
+      },
+      {
+        "@id": "http://purl.obolibrary.org/obo/CHEBI_51217",
+        "@type": "DefinedTerm",
+        "name": "fluorochrome"
       }
     ]
   }
