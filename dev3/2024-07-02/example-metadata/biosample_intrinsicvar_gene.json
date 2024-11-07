@@ -16,7 +16,9 @@
         "preparation_method": "https://www.wikidata.org/wiki/Property:P1537",
         "specimen": "http://purl.obolibrary.org/obo/HSO_0000308",
         "intrinsic_variable": "https://founding-gide.eurobioimaging.eu/tmp/intrinsic_variable",
-        "Gene": "https://bioschemas.org/Gene"
+        "Gene": "https://schema.org/Gene",
+        "extrinsic_variable": "https://founding-gide.eurobioimaging.eu/tmp/extrinsic_variable",
+        "ChemicalSubstance": "https://schema.org/ChemicalSubstance"
       }
     ],
     "@graph": [
@@ -48,6 +50,9 @@
         },
         "intrinsic_variable": {
             "@id": ["_:b2"]
+        },
+        "extrinsic_variable": {
+            "@id": ["_:b3"]
         }
       },
       {
@@ -56,6 +61,14 @@
         "Gene": {
           "@id": "ENSG00000010404"
         }
+      },
+      {
+        "@id": "_:b3",
+        "@type": "extrinsic_variable",
+        "ChemicalSubstance":[
+            {"@id": "17790"},
+            {"@id":"51231"}
+        ]
       },
       {
         "@id": "#1d3f4266-174e-41fe-827f-777ce23e39ca",
@@ -77,7 +90,20 @@
       {
         "@id": "ENSG00000010404",
         "@type": "Gene",
+        "identifier": "ENSG00000010404",
         "taxonomicRange": "Ensembl:ENSG00000010404"
+      },
+      {
+        "@id": "17790",
+        "@type": "ChemicalSubstance",
+        "identifier": "CHEBI:17790",
+        "name": "methanol"
+      },
+      {
+        "@id": "51231",
+        "@type": "ChemicalSubstance",
+        "identifier": "CHEBI:51231",
+        "name": "DAPI"
       }
     ]
   }
